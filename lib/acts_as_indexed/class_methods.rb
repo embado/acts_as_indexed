@@ -29,8 +29,8 @@ module ActsAsIndexed
       end
       include ActsAsIndexed::InstanceMethods
 
-      after_create  :add_to_index
-      before_update :update_index
+      #after_create  :add_to_index
+      #before_update :update_index
       after_destroy :remove_from_index
 
       # scope for Rails 3.x, named_scope for Rails 2.x.
